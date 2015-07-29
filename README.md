@@ -1,10 +1,10 @@
-#Symantec Build File
-> Grunt-based build
+#Generic Build File
+> Grunt-based build, minification, etc...
 
 ##Overview
 * Visit [NodeJS.org](https://nodejs.org/download/) to install Node & npm.
 * Run `npm install -g grunt-cli` to install the Grunt command line interface
-* Navigate to folder where Gruntfile.js is located (trunk), and run `npm install && grunt`
+* Navigate to folder where Gruntfile.js is located, and run `npm install && grunt`
 * Be sure to only checkin changes to `/src` & `/dist` folders, not the `/node_modules` or `/.tmp` folders
 
 ##Config
