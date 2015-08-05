@@ -40,7 +40,7 @@
                             cwd: '<%= yeoman.src %>',
                             src: '**/*.js',
                             dest: '<%= yeoman.dist %>',
-                            ext: '_min.js'
+                            ext: '.min.js'
                         }
                     ]
                 }
