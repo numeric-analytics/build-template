@@ -42,7 +42,8 @@
         },
         all: [
           '<%= yeoman.src %>/*.js']
-      }, // Minification settings
+      },
+      // Minification settings
       uglify: {
         options: {
           banner: '/*! ' +
@@ -66,8 +67,7 @@
       'uglify'
     ]);
     grunt.registerTask('precommit', [
-      'clean:all',
-      'uglify'
+
     ]);
     grunt.registerTask('default', [
       'githooks',
