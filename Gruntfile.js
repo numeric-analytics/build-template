@@ -15,27 +15,10 @@
 
     grunt.initConfig({
       yeoman: yeomanConfig, pkg: grunt.file.readJSON('package.json'),
-      githooks: {
-        all: {
-          // Will run the jshint and test:unit tasks at every commit
-          'pre-commit': ''
-        }
-      },
       gitadd:{
         task:{
           options:{
-            all:true},
-          files: {
-            src: ['<%= yeoman.dist %>/**']
-          }
-        }
-      },
-      gitcommit: {
-        task: {
-          options: {
-            message: 'Auto build commit',
-            noVerify: true,
-            noStatus: false
+            all:true
           },
           files: {
             src: ['<%= yeoman.dist %>/**']
@@ -75,14 +58,10 @@
       'clean:all',
       'uglify'
     ]);
-    grunt.registerTask('precommit', [
-      'gitadd',
-      'gitcommit'
-    ]);
     grunt.registerTask('default', [
-      'githooks',
       'clean:all',
-      'uglify'
+      'uglify',
+      'gitadd'
     ]);
   };
 }());

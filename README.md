@@ -13,6 +13,6 @@
 
 ##Usage
 * Edit files in `/src`
-* Commit files (runs `grunt precommit` automatically before actually committing)
+* Run `grunt` to build files locally
+* Commit files
 * Push commits to remote (Github)
-* (optional) Run `grunt` to build files locally (for testing, serving locally, etc...)
