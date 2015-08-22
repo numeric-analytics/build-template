@@ -16,6 +16,12 @@
         grunt.initConfig({
             yeoman: yeomanConfig,
             pkg: grunt.file.readJSON('package.json'),
+            githooks: {
+              all: {
+                // Will run the jshint and test:unit tasks at every commit
+                'pre-commit': 'jshint'
+              }
+            },
             clean: {
                 all: ['<%= yeoman.temp %>', '<%= yeoman.dist %>/*']
             },
