@@ -4,6 +4,7 @@
         // show elapsed time at the end
         require('time-grunt')(grunt);
         // load all grunt tasks
+        grunt.loadNpmTasks('grunt-githooks');
         require('load-grunt-tasks')(grunt);
 
         // configurable paths
