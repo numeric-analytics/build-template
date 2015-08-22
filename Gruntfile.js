@@ -15,16 +15,6 @@
 
     grunt.initConfig({
       yeoman: yeomanConfig, pkg: grunt.file.readJSON('package.json'),
-      gitadd:{
-        task:{
-          options:{
-            all:true
-          },
-          files: {
-            src: ['<%= yeoman.dist %>/**']
-          }
-        }
-      },
       clean: {
         all: ['<%= yeoman.temp %>']
       }, //
@@ -60,8 +50,7 @@
     ]);
     grunt.registerTask('default', [
       'clean:all',
-      'uglify',
-      'gitadd'
+      'uglify'
     ]);
   };
 }());
