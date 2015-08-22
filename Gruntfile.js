@@ -18,7 +18,16 @@
       githooks: {
         all: {
           // Will run the jshint and test:unit tasks at every commit
-          'pre-commit': 'precommit'
+          'pre-commit': ''
+        }
+      },
+      gitadd:{
+        task:{
+          options:{
+            all:true},
+          files: {
+            src: ['<%= yeoman.dist %>/**']
+          }
         }
       },
       gitcommit: {
@@ -67,7 +76,8 @@
       'uglify'
     ]);
     grunt.registerTask('precommit', [
-
+      'gitadd',
+      'gitcommit'
     ]);
     grunt.registerTask('default', [
       'githooks',
