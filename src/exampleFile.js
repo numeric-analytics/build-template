@@ -10,4 +10,3 @@ var testObj = {
 };
 
 testObj.testFunc1('firstParam','secondParam','thirdParam');
-// test
