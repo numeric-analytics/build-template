@@ -1,1 +1,0 @@
-/*! na-build-template - v1.0.0 - 2015-07-29 */var testObj={testFunc1:function(a,b,c){console.log("First "+a),console.log("Second "+b),console.log("Third "+c)}};testObj.testFunc1("firstParam","secondParam","thirdParam");
