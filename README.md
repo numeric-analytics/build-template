@@ -8,7 +8,7 @@
 * Note, the `/node_modules` and `/.tmp` folders are ignored by Git, so don't try to commit to them :)
 
 ##Config
-* `Gruntfile.js - yeomanConfig`: Update local folder structures and variables: including the **mainfile** file name.
+* `Gruntfile.js - yeomanConfig`: Update local folder structures and variables
  * `package.json`: (optional) Bump version when making a release. Version is used in prod code banners. At the present time, this is not a vital part of our workflow.
 
 ##Usage
