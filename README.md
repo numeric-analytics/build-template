@@ -8,8 +8,8 @@
 * Note, the `/node_modules` and `/.tmp` folders are ignored by Git, so don't try to commit to them :)
 
 ##Config
-* `package.json`: Bump version when making a release. Version is used in prod code banners. At the present time, this is not a vital part of our workflow.
-* `Gruntfile.js - yeomanConfig`: Update local folder structures and variables: including the **mainfile** file name. 
+* `Gruntfile.js - yeomanConfig`: Update local folder structures and variables: including the **mainfile** file name.
+ * `package.json`: (optional) Bump version when making a release. Version is used in prod code banners. At the present time, this is not a vital part of our workflow.
 
 ##Usage
 * Edit files in `/src`
