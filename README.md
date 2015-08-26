@@ -16,3 +16,7 @@
 * Run `grunt` to build files locally
 * Commit files
 * Push commits to remote (Github)
+
+##Process Notes
+* Only ever use `/dist` files (built with `grunt`) for QA tests.
+* One east way is to send the `raw` link of the code you want to have tested. Here's an example from this project: [Raw File](https://raw.githubusercontent.com/numeric-analytics/build-template/master/dist/exampleFile.min.js)
