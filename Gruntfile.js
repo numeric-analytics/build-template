@@ -16,14 +16,15 @@
     grunt.initConfig({
       yeoman: yeomanConfig, pkg: grunt.file.readJSON('package.json'),
       clean: {
-        all: ['<%= yeoman.temp %>']
-      }, //
+        all: ['<%= yeoman.temp %>','<%= yeoman.dist %>']
+      },
+      // JS Hint
       jshint: {
         options: {
-          jshintrc: '.jshintrc', reporter: require('jshint-stylish')
+          jshintrc: '.jshintrc',
+          reporter: require('jshint-stylish')
         },
-        all: [
-          '<%= yeoman.src %>/*.js']
+        all: ['<%= yeoman.src %>/*.js']
       },
       // Minification settings
       uglify: {
@@ -36,7 +37,13 @@
         },
         dist: {
           files: [
-            {expand: true, cwd: '<%= yeoman.src %>', src: '**/*.js', dest: '<%= yeoman.dist %>', ext: '.min.js'}
+            {
+              expand: true,
+              cwd: '<%= yeoman.src %>',
+              src: '**/*.js',
+              dest: '<%= yeoman.dist %>',
+              ext: '.min.js'
+            }
           ]
         }
       }
@@ -50,6 +57,7 @@
     ]);
     grunt.registerTask('default', [
       'clean:all',
+      'jshint',
       'uglify'
     ]);
   };

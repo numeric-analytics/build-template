@@ -1,6 +1,8 @@
+'use strict';
 /**
  * Created by adamschnaare on 7/29/15.
  */
+
 var testObj = {
   testFunc1: function(first,second,third){
     console.log('First ' + first);
